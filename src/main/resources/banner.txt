@@ -1,0 +1,25 @@
+
+
+               AAA                                 hhhhhhh                                                                  222222222222222
+              A:::A                                h:::::h                                                                 2:::::::::::::::22
+             A:::::A                               h:::::h                                                                 2::::::222222:::::2
+            A:::::::A                              h:::::h                                                                 2222222     2:::::2
+           A:::::::::A          rrrrr   rrrrrrrrr   h::::h hhhhh       uuuuuu    uuuuuu      ssssssssss                                2:::::2
+          A:::::A:::::A         r::::rrr:::::::::r  h::::hh:::::hhh    u::::u    u::::u    ss::::::::::s                               2:::::2
+         A:::::A A:::::A        r:::::::::::::::::r h::::::::::::::hh  u::::u    u::::u  ss:::::::::::::s                           2222::::2
+        A:::::A   A:::::A       rr::::::rrrrr::::::rh:::::::hhh::::::h u::::u    u::::u  s::::::ssss:::::s ---------------     22222::::::22
+       A:::::A     A:::::A       r:::::r     r:::::rh::::::h   h::::::hu::::u    u::::u   s:::::s  ssssss  -:::::::::::::-   22::::::::222
+      A:::::AAAAAAAAA:::::A      r:::::r     rrrrrrrh:::::h     h:::::hu::::u    u::::u     s::::::s       ---------------  2:::::22222
+     A:::::::::::::::::::::A     r:::::r            h:::::h     h:::::hu::::u    u::::u        s::::::s                    2:::::2
+    A:::::AAAAAAAAAAAAA:::::A    r:::::r            h:::::h     h:::::hu:::::uuuu:::::u  ssssss   s:::::s                  2:::::2
+   A:::::A             A:::::A   r:::::r            h:::::h     h:::::hu:::::::::::::::uus:::::ssss::::::s                 2:::::2       222222
+  A:::::A               A:::::A  r:::::r            h:::::h     h:::::h u:::::::::::::::us::::::::::::::s                  2::::::2222222:::::2
+ A:::::A                 A:::::A r:::::r            h:::::h     h:::::h  uu::::::::uu:::u s:::::::::::ss                   2::::::::::::::::::2
+AAAAAAA                   AAAAAAArrrrrrr            hhhhhhh     hhhhhhh    uuuuuuuu  uuuu  sssssssssss                     22222222222222222222
+
+            Version:${application.version}
+
+
+
+
+

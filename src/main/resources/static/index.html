@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>ARHUS-2</title>
+    <meta name="description" content="ARHUS-2 Project">
+    <meta name="author" content="Virgil Borcea and Starciuc Iurie">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+
+
+    <style type="text/css">
+        .my-button {
+            width: 90px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body onload="loadDashboardData();">
+<div class="navbar">
+    <div class="container">
+        <button class="navbar-toggle" type="button" data-toggle="collapse"
+                data-target=".sidebar-nav.nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"> <img alt="VALY" src="assets/img/logo20.png"/>
+            <span>ARHUS-2</span></a>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2 main-menu-span">
+            <div class="sidebar-nav nav-collapse collapse navbar-collapse">
+                <ul class="nav nav-tabs nav-stacked main-menu">
+                    <li><a href="index.html"><i class="fa fa-home icon"></i><span
+                            class="hidden-sm"> Dashboard</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content" class="col-sm-10">
+            <div>
+                <hr>
+                <ul class="breadcrumb">
+                    <li><a href="index.html#">Home</a></li>
+                    <li><a href="index.html#">Dashboard</a></li>
+                </ul>
+                <hr>
+            </div>
+
+            <div id="webboradcast-div" class="row" style="display: none;">
+                <div class="col-sm-6">
+                    <div class="box">
+                        <div class="box-header">
+                            <h2><i class="fa fa-tasks"></i><span class="break"></span>WebCamera</h2>
+
+                            <div class="box-icon">
+                                <button type="button" id="startbradcast" class="btn btn-default"
+                                        onclick="startBroadcast();"></button>
+                                <button type="button" id="stopbradcast" class="btn btn-default"
+                                        onclick="stopBroadcast();"></button>
+                                <a href="index.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+                            </div>
+                        </div>
+                        <div id="streamingdiv" class="box-content">
+                            <img id="streaming" src="http://192.168.100.10:8080/?action=stream"
+                                 style='width:100%; height:auto;'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="box">
+                        <div class="box-header">
+                            <h2><i class="fa fa-tasks"></i><span class="break"></span>Direction</h2>
+                        </div>
+                        <div class="box-content">
+                            <div class="manualControll">
+                                <div class="col-sm-4 btn-block">
+                                    <div class="btn-group">
+                                        <button id="forward_button" type="button" class="btn btn-default my-button" style="margin-left: 45px;">
+                                            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                    <br>
+
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <button id="left_button" type="button" class="btn btn-default my-button">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                        </button>
+                                        <button id="right_button" type="button" class="btn btn-default my-button">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="box">
+                        <div class="box-header">
+                            <h2><i class="fa fa-tasks"></i><span class="break"></span>Speed</h2>
+                        </div>
+                        <div class="box-content">
+                            <div class="speedControll">
+                                <p>
+                                    <button id="stop_gear_button" class="btn btn-large btn-danger my-button">P</button>
+                                    <button id="first_gear_button" class="btn btn-large btn-success  my-button">I</button>
+                                    <button id="second_gear_button" class="btn btn-large btn-primary my-button">II</button>
+                                    <button id="third_gear_button" class="btn btn-large btn-info my-button">III</button>
+                                    <button id="fourth_gear_button" class="btn btn-large btn-warning my-button">IV</button>
+                                    <button id="reverse_gear_button" class="btn btn-large btn-danger my-button">R</button>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <footer>
+        <p>
+            <span style="text-align:left;float:left">&copy; 2015  <a href="">ARHUS-2</a> by Virgil and Iurie</span>
+            <span class="hidden-phone" style="text-align:right;float:right">Powered by: <a href="" alt="">ARHUS-2</a></span>
+        </p>
+    </footer>
+
+</div>
+<script src="assets/js/jquery-2.0.3.min.js"></script>
+
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+</script>
+
+<script type="text/javascript">
+    window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>" + "<" + "/script>");
+</script>
+<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/default.min.js"></script>
+<script src="assets/js/core.min.js"></script>
+<script src="js/utility.js" rel="stylesheet"></script>
+<script src="js/pages/index.js"></script>
+
+<script>
+    initEvents();
+    accelerate();
+</script>
+</body>
+</html>
